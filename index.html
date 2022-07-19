@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>stock management</title>
+</head>
+<body>
+  <div class="project">
+    <div class="header">
+      <h2>stock management</h2>
+      <p>my first project for manage a tech stock</p>
+    </div>
+    <div class="inputs">
+      <input type="text" placeholder="Title" id="title">
+      <div class="prices">
+        <input type="number" onkeyup="getTotal()" placeholder="price" id="price">
+        <input type="number" onkeyup="getTotal()" placeholder="Taxes" id="taxes">
+        <input type="number" onkeyup="getTotal()" placeholder="ads" id="ads">
+        <input type="number" onkeyup="getTotal()" placeholder="Discount"id="discount">
+        <small id="total"></small>
+      </div>
+      <input type="number" placeholder="Count"id="count">
+      <input type="text" placeholder="Category"id="category">
+              <button id="create">Create</button>
+    </div>
+    <div class="outputs">
+      <div class="searchsection">
+        <input type="text" id="search" placeholder="Search">
+        <div class="btnsearch">
+          <button> Search by Title</button>
+          <button>Search by Category</button>
+        </div>
+        <table>
+          <tr>
+            <th>Id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>ads</th>
+            <th>discount</th>
+            <th>total</th>
+            <th>category</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+          <tbody id="tbody">
+          
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<script src="script.js"></script>  
+</body>
+</html>
